@@ -82,7 +82,7 @@ main p {
 }
 
 .cta-button:hover {
-  background-color: #000000; /* Jet Black */
+  background-color: #000000;
   color: #ffc700; /* Vibrant Gold */
   border: 2px solid #ffc700;
 }
@@ -93,5 +93,5 @@ footer {
   padding: 1em 0;
   background-color: #000000; /* Jet Black */
   color: #ffc700; /* Vibrant Gold */
-  font-size: 0.9em;
+  font-size: 0.8em;
 }
