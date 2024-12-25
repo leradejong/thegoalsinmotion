@@ -47,10 +47,21 @@ header nav ul li a {
   font-weight: bold;
 }
 
-/* Logo Placeholder */
-.logo-placeholder img {
-  max-width: 150px;
-  margin-bottom: 1em;
+/* Logo Styling */
+.logo-placeholder {
+  text-align: center;
+  margin-bottom: 1.5em;
+}
+
+.logo-placeholder .logo {
+  max-width: 50; /* Increase size here */
+  height: auto; /* Maintain aspect ratio */
+}
+
+@media (max-width: 768px) {
+  .logo-placeholder .logo {
+    max-width: 50px; /* Adjust size for smaller screens */
+  }
 }
 
 /* Main Content */
@@ -112,4 +123,68 @@ footer {
   margin: 1em 0;
   font-size: 1.2em;
   line-height: 1.6;
+}
+
+/* General Section Consistency */
+.consistent-section {
+  padding: 2em;
+  margin: 2em auto;
+  max-width: 900px;
+  text-align: center;
+  background-color: #e5e5e5; /* Cool Gray */
+  border-radius: 10px;
+}
+
+/* Hero Section */
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5em;
+}
+
+.about-container .about-text {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.about-container .about-image img {
+  max-width: 300px;
+  border-radius: 10px;
+}
+
+/* Highlights Section */
+.about-highlights ul {
+  list-style: none;
+  padding: 0;
+  margin: 1.5em 0;
+}
+
+.about-highlights ul li {
+  font-size: 1.2em;
+  margin: 0.5em 0;
+  color: #000000; /* Jet Black */
+}
+
+/* CTA Section */
+.about-cta {
+  background-color: #000000; /* Jet Black */
+  color: #ffc700; /* Vibrant Gold */
+}
+
+.about-cta p {
+  margin: 1em 0;
+}
+
+.cta-link {
+  color: #ffc700; /* Vibrant Gold */
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.cta-link:hover {
+  color: #000000; /* Jet Black */
+  text-decoration: underline;
 }
